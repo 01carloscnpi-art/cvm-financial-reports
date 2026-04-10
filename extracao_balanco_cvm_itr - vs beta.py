@@ -36,7 +36,7 @@ df_pivot.head(10).style.format(
     lambda x: f"{x:,.2f}".replace(",", "X").replace(".", ",").replace("X", ".")
 )
 
-# 7. Resetar índice para que CD_CONTA e DS_CONTA fiquem como colunas
+# 8. Resetar índice para que CD_CONTA e DS_CONTA fiquem como colunas
 df_pivot = df_pivot.reset_index()
 
 # 9. Exportar para Excel
