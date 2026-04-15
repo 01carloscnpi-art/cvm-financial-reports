@@ -66,7 +66,7 @@ for ano in anos:
         print(f"Falha ao baixar arquivo de {ano}. Status: {r.status_code}")
 
 # 7. Exportar todos os anos para Excel (cada ano em uma aba separada)
-output_path = r"C:\Users\econo\Downloads\DFC_DFP_2023_2025.xlsx"
+output_path = r"C:\Users\DFC_DFP_2023_2025.xlsx"
 
 with pd.ExcelWriter(output_path, engine="openpyxl") as writer:
     for ano, df in dfs_dfc_pivot.items():
